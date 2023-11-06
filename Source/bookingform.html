@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="./books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="main-bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span> <i class="fa-solid fa-calendar-days small"></i></span>Book now<span><i class="fa-solid fa-calendar-days small"></i></span></h1>
+            <p>Warmly welcom from our Lecon Hotel, Take a rest in peaceful and feel the nature...</p>
+
+        </div>
+        <div class="main-form">
+            <form action="./success.html" method="get">
+                <div>
+                    <span>Your fulll name?</span>
+                    <input type="text" name="name" id="name"placeholder="Write your name here..." pattern="[A-Za-z ]+" required>
+                </div>
+                <div>
+                    <span>Your email address?</span>
+                    <input type="email" name="email" id="email"placeholder="Write your email here..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                <div>
+                    <!-- This is the select option -->
+                    <span>How many people?</span>
+                    <select name="people" id="people">
+                        <option value="">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <span>What time?</span>
+                    <input type="time" name="time" id="time"placeholder="AM(or)PM" required >
+                </div>
+                <div>
+                    <span>From</span>
+                    <input type="date" name="date" id="date"placeholder="mm/dd/yyyy" required>
+                </div>
+                <div>
+                    <span>To</span>
+                    <input type="date" name="date" id="date"placeholder="mm/dd/yyyy" required>
+                </div>
+                <div>
+                   <span>Your phone number?</span>
+                   <input type="tel" name="tel" id="tel" placeholder="Write your number here..."  required pattern="+\d" >
+                </div>
+                <div>
+                    <!-- This is the select option -->
+                    <span>What type of room???</span>
+                    <select name="room" id="room">
+                        <option value="JuniorSuit Room">JuniorSuit Room</option>
+                        <option value="Double Room" selected>Double Room</option>
+                        <option value="Standard Room">Standard Room</option>
+                        <option value="SeniorSuit Room">SeniorSuit Room</option>
+                    </select>
+                    
+                </div>
+                <div id="submit">
+             <input type="submit" value="SUBMIT"  id="submit"></div>
+                
+                 </form>
+        </div>
+    </div>
+</body>
+</html>
